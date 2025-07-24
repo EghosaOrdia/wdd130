@@ -20,7 +20,7 @@ img {
 
 body {
   font-family: var(--body-font);
-  font-weight: 100;
+  font-weight: 400;
   color: var(--accent2-color);
 }
 
