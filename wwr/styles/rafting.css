@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+* img {
+  width: 100%;
+  height: auto;
+}
 body {
   font-family: var(--body-font);
   color: var(--accent2-color);
@@ -52,7 +56,10 @@ header nav {
   display: flex;
   gap: 20px;
 }
-
+header img {
+  width: 100px;
+  height: auto;
+}
 header nav a {
   text-decoration: none;
   color: var(--accent2-color);
@@ -128,7 +135,7 @@ h1 {
   grid-template-columns: repeat(5, 1fr);
   gap: 16px;
 }
-figcaption{
+figcaption {
   font-size: 14px;
   font-weight: 500;
   text-align: center;
