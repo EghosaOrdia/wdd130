@@ -87,6 +87,32 @@ h1 {
   float: right;
   width: 125px;
 }
+.history {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.history h2 {
+  grid-column: span 3;
+  text-align: center;
+  color: var(--primary-color);
+}
+.adventures {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 16px;
+}
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
 .social-media a {
   text-decoration: none;
 }
