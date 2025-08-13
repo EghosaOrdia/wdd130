@@ -197,17 +197,19 @@ footer {
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .special-form-control {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.form-control label {
+label {
   font-weight: 500;
 }
-.form-control input,
-.form-control textarea {
+
+input,
+textarea {
   width: 100%;
   padding: 0.5rem;
   border: 2px solid #eee;
@@ -215,8 +217,9 @@ footer {
   font-size: 14px;
   font-family: var(--body-font);
 }
-.form-control input::placeholder,
-.form-control textarea::placeholder {
+
+input::placeholder,
+textarea::placeholder {
   color: #aaa;
 }
 
