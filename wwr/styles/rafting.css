@@ -45,6 +45,7 @@ article {
 }
 
 header {
+  position: relative;
   width: 900px;
   margin: 0 auto;
   display: flex;
@@ -53,6 +54,7 @@ header {
   padding: 16px 0;
   align-items: center;
   place-items: center;
+  z-index: 10;
 }
 
 header img {
@@ -247,6 +249,15 @@ textarea::placeholder {
 .raft-hero {
   position: relative;
   display: flex;
+}
+.floating-bg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #fbe66d 80%, #65cfff 20%);
 }
 
 .floating {
