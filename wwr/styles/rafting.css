@@ -3,6 +3,17 @@
   --secondary-color: #e5f9e0;
   --accent1-color: #ffffff;
   --accent2-color: #000000;
+  --bg: #0f172a;
+  --panel: #111827;
+  --muted: #94a3b8;
+  --text: #e5e7eb;
+  --brand: #22d3ee;
+  --brand-2: #60a5fa;
+  --ok: #34d399;
+  --warn: #fbbf24;
+  --danger: #fb7185;
+  --border: #1f2937;
+  --row: #0b1223;
   --heading-font: "Bebas Neue", sans-serif;
   --body-font: "Poppins", sans-serif;
 }
@@ -376,4 +387,184 @@ textarea::placeholder {
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin-top: 1rem;
+}
+
+/* Table */
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.table-toolbar {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(96, 165, 250, 0.08), transparent);
+}
+.table-toolbar .hint {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.search {
+  position: relative;
+  flex: 1;
+  max-width: 360px;
+}
+.search input {
+  width: 100%;
+  padding: 0.7rem 0.9rem 0.7rem 2.4rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #0b1223;
+  color: var(--text);
+  outline: none;
+}
+.search svg {
+  position: absolute;
+  left: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 880px;
+  background: transparent;
+}
+caption {
+  caption-side: top;
+  text-align: left;
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  color: var(--brand);
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #0d162b;
+  color: #c7d2fe;
+  text-align: left;
+  font-size: 0.9rem;
+  letter-spacing: 0.2px;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+tbody tr {
+  background: transparent;
+  transition: background 0.15s ease, transform 0.05s ease;
+}
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+tbody tr:hover {
+  background: rgba(34, 211, 238, 0.06);
+}
+
+td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid var(--border);
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+.diff-easy {
+  color: var(--ok);
+}
+.diff-moderate {
+  color: var(--warn);
+}
+.diff-hard {
+  color: var(--danger);
+}
+
+.price {
+  font-weight: 700;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background: rgba(96, 165, 250, 0.15);
+  border: 1px solid rgba(96, 165, 250, 0.35);
+}
+
+.avail {
+  font-weight: 600;
+}
+.avail.available {
+  color: var(--ok);
+}
+.avail.limited {
+  color: var(--warn);
+}
+.avail.full {
+  color: var(--danger);
+}
+
+a.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  background: linear-gradient(180deg, var(--brand), var(--brand-2));
+  color: #051018;
+  border: none;
+  box-shadow: 0 6px 20px rgba(34, 211, 238, 0.25);
+}
+a.btn:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* wwr contact */
+.contact-h2 {
+  font-size: 3rem;
+}
+
+.contact-p {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-btn {
+  display: inline-block;
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-family: var(--body-font);
+  font-weight: 500;
+  text-decoration: none;
 }
